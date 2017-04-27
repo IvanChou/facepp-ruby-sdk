@@ -6,8 +6,7 @@ A Ruby interface to the FacePlusPlus API.
 
 This sdk has been tested against the following Ruby versions:
 
-- 1.8.7_p370
-- 1.9.3_p286
+- 1.9.3_p286 and upper
 
 ## Installation
 
@@ -21,16 +20,11 @@ gem install *.gem
 ```ruby
 require 'facepp'
 
-api = FacePP.new 'YOUR_API_KEY', 'YOUR_API_SECRET'
-puts api.detection.detect url: '/tmp/0.jpg'
-puts api.person.create person_name: 'Curry'
-puts api.person.add_faces person_name: 'Curry', face_id: ['FACD_ID_0', 'FACE_ID_1']
-puts api.person.add_faces person_name: 'Curry', face_id: ['FACD_ID_0', 'FACE_ID_1'].to_set
-puts api.person.add_faces person_id: 'PERSON_ID', face_id: 'FACE_ID'
-puts api.info.get_quota
+api = FacePP::Client.new 'YOUR_API_KEY', 'YOUR_API_SECRET'
+puts api.v3.detect image_file: '/tmp/0.jpg'
 ```
 
-See the RSpec tests for more examples.
+~~See the RSpec tests for more examples.~~
 
 ## License
 

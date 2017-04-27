@@ -1,3 +1,4 @@
+# TODO: need refator.
 require 'set'
 require 'facepp'
 
@@ -8,7 +9,7 @@ RSpec::Matchers.define :be_person do
 end
 
 describe FacePP do
-  let(:api) { FacePP.new 'YOUR_API_KEY', 'YOUR_API_SECRET' }
+  let(:api) { FacePP::Client.new 'YOUR_API_KEY', 'YOUR_API_SECRET' }
   let(:face_id1) { api.detection.detect(img: '/tmp/0.jpg')['face'][0]['face_id'] }
   let(:face_id2) { api.detection.detect(img: '/tmp/1.jpg')['face'][0]['face_id'] }
 
