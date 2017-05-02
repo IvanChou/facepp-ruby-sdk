@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'facepp'
-  s.version = '1.0.0.rc1'
+  s.version = '1.0.0.rc2'
   s.platform = Gem::Platform::RUBY
   s.summary = 'A Ruby interface to the FacePlusPlus API.'
   s.description = 'FacePlusPlus API Reference: http://faceplusplus.com/en/docs/getting_started'
