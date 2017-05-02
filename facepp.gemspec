@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.description = 'FacePlusPlus API Reference: http://faceplusplus.com/en/docs/getting_started'
   s.homepage = 'http://faceplusplus.com/en/docs/download/sdk'
   s.licenses = ['MIT']
-  s.authors = ['SONG Fangrui']
-  s.email = ['sfr@megvii.com']
+  s.authors = ['SONG Fangrui', 'iChou']
+  s.email = ['sfr@megvii.com', 'yiichou@gmail.com']
   s.files = ['LICENSE']
   s.files += Dir.glob 'lib/**/*.rb'
   s.files += Dir.glob 'spec/**/*'

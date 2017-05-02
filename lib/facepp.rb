@@ -1,3 +1,7 @@
-require "#{File.dirname(__FILE__)}/facepp/client"
-require "#{File.dirname(__FILE__)}/facepp/multi_part"
-require "#{File.dirname(__FILE__)}/facepp/face"
+require 'facepp/client'
+require 'facepp/multi_part'
+
+require 'facepp/face'
+require 'facepp/body'
+require 'facepp/card'
+require 'facepp/image'
